@@ -1,0 +1,13 @@
+/home/wuji-distributed-systems/Desktop/Udemy_Distributed_Systems/05 Distributed Document Search/02 Distributed Doc Search Worker Node/src/main/java/model/Task.java
+/home/wuji-distributed-systems/Desktop/Udemy_Distributed_Systems/05 Distributed Document Search/02 Distributed Doc Search Worker Node/src/main/java/search/TFIDF.java
+/home/wuji-distributed-systems/Desktop/Udemy_Distributed_Systems/05 Distributed Document Search/02 Distributed Doc Search Worker Node/src/main/java/model/Result.java
+/home/wuji-distributed-systems/Desktop/Udemy_Distributed_Systems/05 Distributed Document Search/02 Distributed Doc Search Worker Node/src/main/java/cluster/management/LeaderElection.java
+/home/wuji-distributed-systems/Desktop/Udemy_Distributed_Systems/05 Distributed Document Search/02 Distributed Doc Search Worker Node/src/main/java/networking/OnRequestCallback.java
+/home/wuji-distributed-systems/Desktop/Udemy_Distributed_Systems/05 Distributed Document Search/02 Distributed Doc Search Worker Node/src/main/java/model/DocumentData.java
+/home/wuji-distributed-systems/Desktop/Udemy_Distributed_Systems/05 Distributed Document Search/02 Distributed Doc Search Worker Node/src/main/java/cluster/management/OnElectionCallback.java
+/home/wuji-distributed-systems/Desktop/Udemy_Distributed_Systems/05 Distributed Document Search/02 Distributed Doc Search Worker Node/src/main/java/Application.java
+/home/wuji-distributed-systems/Desktop/Udemy_Distributed_Systems/05 Distributed Document Search/02 Distributed Doc Search Worker Node/src/main/java/model/SerializationUtils.java
+/home/wuji-distributed-systems/Desktop/Udemy_Distributed_Systems/05 Distributed Document Search/02 Distributed Doc Search Worker Node/src/main/java/networking/WebServer.java
+/home/wuji-distributed-systems/Desktop/Udemy_Distributed_Systems/05 Distributed Document Search/02 Distributed Doc Search Worker Node/src/main/java/cluster/management/ServiceRegistry.java
+/home/wuji-distributed-systems/Desktop/Udemy_Distributed_Systems/05 Distributed Document Search/02 Distributed Doc Search Worker Node/src/main/java/OnElectionAction.java
+/home/wuji-distributed-systems/Desktop/Udemy_Distributed_Systems/05 Distributed Document Search/02 Distributed Doc Search Worker Node/src/main/java/search/SearchWorker.java
