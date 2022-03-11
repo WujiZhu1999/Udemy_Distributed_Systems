@@ -36,7 +36,6 @@ public class SequentialSearch {
         List<String> term3 = TFIDF.getWordsFromLine(SEARCH_QUERY_3);
         findMostRelevantDocuments(documents, term3);
 
-
     }
 
     private static void findMostRelevantDocuments(List<String> documents, List<String> terms) throws FileNotFoundException {
