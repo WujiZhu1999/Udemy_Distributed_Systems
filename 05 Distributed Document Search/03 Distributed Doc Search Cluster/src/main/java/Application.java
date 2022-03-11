@@ -40,7 +40,7 @@ public class Application implements Watcher {
     private ZooKeeper zooKeeper;
 
     public static void main(String[] args) throws IOException, InterruptedException, KeeperException {
-        int currentServerPort = 8080;
+        int currentServerPort = 8081;
         if (args.length == 1) {
             currentServerPort = Integer.parseInt(args[0]);
         }
