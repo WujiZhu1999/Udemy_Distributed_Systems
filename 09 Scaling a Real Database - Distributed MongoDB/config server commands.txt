@@ -1,0 +1,18 @@
+note that config server are required for database sharding, should run these codes before shards
+
+mongod --configsvr --replSet config-rs --dbpath ./config-srv-0 --bind_ip 127.0.0.1 --port 27020
+
+mongod --configsvr --replSet config-rs --dbpath ./config-srv-1 --bind_ip 127.0.0.1 --port 27021
+
+mongod --configsvr --replSet config-rs --dbpath ./config-srv-2 --bind_ip 127.0.0.1 --port 27022
+
+mongo --port 27020
+rs.initiate({
+  _id: "config-rs",
+  configsvr: true,
+  members: [
+    { _id: 0, host: "127.0.0.1:27020" },
+    { _id: 1, host: "127.0.0.1:27021" },
+    { _id: 2, host: "127.0.0.1:27022" }
+  ]
+})

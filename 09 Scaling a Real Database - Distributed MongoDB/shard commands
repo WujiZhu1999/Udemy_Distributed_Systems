@@ -1,0 +1,26 @@
+mongod --shardsvr --port 27023 --bind_ip 127.0.0.1 --replSet rs11 --dbpath ./shard-0 --oplogSize 128
+
+mongo --port 27023
+rs.initiate({
+  _id: "rs11",
+  members: [
+    { _id: 0, host: "127.0.0.1:27023" }
+  ]
+})
+
+
+mongod --shardsvr --port 27024 --bind_ip 127.0.0.1 --replSet rs22 --dbpath ./shard-1 --oplogSize 128
+
+mongo --port 27024
+rs.initiate({
+  _id: "rs22",
+  members: [
+    { _id: 0, host: "127.0.0.1:27024" }
+  ]
+})
+
+mongos --configdb config-rs/127.0.0.1:27020,127.0.0.1:27021,127.0.0.1:27022 --bind_ip 127.0.0.1 --port 27025
+
+mongo --port 27025
+sh.addShard("rs11/127.0.0.1:27023")
+sh.addShard("re22/127.0.0.1:27024")
